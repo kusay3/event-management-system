@@ -194,3 +194,27 @@ button:hover {
   min-height: 100vh;
   color: #333; 
 }
+
+.login-page {
+  background-image: url('https://images.pexels.com/photos/1763067/pexels-photo-1763067.jpeg?cs=srgb&dl=pexels-sebastian-ervi-866902-1763067.jpg&fm=jpg'); 
+  background-position: center center;
+  background-size: cover;
+  min-height: 100vh;
+  color: #333; 
+}
+
+.register-page {
+  background-image: url('https://images.pexels.com/photos/1763067/pexels-photo-1763067.jpeg?cs=srgb&dl=pexels-sebastian-ervi-866902-1763067.jpg&fm=jpg'); 
+  background-position: center center;
+  background-size: cover;
+  min-height: 100vh;
+  color: #333; 
+}
+
+.tickets-page {
+  background-image: url('https://www.timeturk.com/resim/detay/175/1756491.jpg'); 
+  background-position: center center;
+  background-size: cover;
+  min-height: 100vh;
+  color: #333; 
+}
