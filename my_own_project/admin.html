@@ -1,0 +1,48 @@
+<!-- admin.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin - Manage Events</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="admin-page">
+  <div class="admin-header">
+    <h2>Admin Dashboard</h2>
+    <button onclick="location.href='approve-users.html'">Manage Accounts</button>
+  </div>
+
+  <div class="form-container">
+    <h3>Add / Edit Event</h3>
+    <form id="eventForm">
+      <input type="text" id="eventTitle" placeholder="Event Title" required />
+      <input type="date" id="eventDate" required />
+      <input type="text" id="eventCity" placeholder="City" required />
+      <input type="text" id="eventImage" placeholder="Image URL" />
+
+      <select id="eventCategory" required>
+        <option value="">Select Category</option>
+        <option value="Music">Music</option>
+        <option value="Art">Art</option>
+        <option value="Football">Football</option>
+        <option value="Chess">Chess</option>
+      </select>
+
+      <h4>VIP Ticket</h4>
+      <input type="number" id="vipCount" placeholder="VIP Ticket Count" required />
+      <input type="number" id="vipPrice" placeholder="VIP Ticket Price" required />
+
+      <h4>Standard Ticket</h4>
+      <input type="number" id="stdCount" placeholder="Standard Ticket Count" required />
+      <input type="number" id="stdPrice" placeholder="Standard Ticket Price" required />
+
+      <button type="submit" id="submitBtn">Add Event</button>
+    </form>
+  </div>
+
+  <div id="eventList"></div>
+
+  <script src="main.js"></script>
+</body>
+</html>

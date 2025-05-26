@@ -1,0 +1,28 @@
+<!-- events.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Events</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="events-page">
+  <div id="header">
+    <button onclick="filterEvents('All')">All</button>
+    <button onclick="filterEvents('Music')">Music🎵</button>
+    <button onclick="filterEvents('Art')">Art🖌️</button>
+    <button onclick="filterEvents('Football')">Football⚽</button>
+    <button onclick="filterEvents('Chess')">Chess♟️</button>
+    <button onclick="location.href='my-tickets.html'">My Tickets🎟️</button>
+  </div>
+
+  <h2>Upcoming Events</h2>
+  <div id="eventsContainer"></div>
+
+  <script src="main.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => loadEventsPage());
+  </script>
+</body>
+</html>

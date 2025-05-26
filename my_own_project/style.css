@@ -1,0 +1,196 @@
+/* style.css */
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #f0f2f5, #dbeafe);
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+h2, h3, h4 {
+  text-align: center;
+  color: #2c3e50;
+}
+
+/* Container Styling */
+.form-container {
+  max-width: 400px;
+  background: white;
+  margin: 40px auto;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+input, select, button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 15px;
+  box-sizing: border-box;
+}
+
+/* General Button Styling */
+button {
+  background-color: #007bff;
+  color: white;
+  font-weight: bold;
+  border: none;
+  transition: background-color 0.2s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Header Navigation - circular buttons horizontally aligned */
+#header {
+  display: flex;
+  justify-content: center;
+  gap: 90px;
+  padding: 15px;
+  
+  
+  flex-wrap: nowrap;  /* in the same row*/
+}
+
+#header button {
+  width: 100px;
+  height: 60px;
+  border-radius: 100%; /* circle */
+  border: 2px solid black;
+  background-color: white;
+  color: black;
+  font-weight: bold;
+  font-size: 14px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+#header button:hover {
+  background-color: black;
+  color: white;
+}
+
+
+/* Event Cards */
+.event-card {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 15px;
+  margin: 15px;
+  width: 250px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  display: inline-block;
+  vertical-align: top;
+}
+
+.event-card img {
+  width: 100%;
+  border-radius: 8px;
+  margin-top: 10px;
+}
+
+/* Ticket Buttons */
+.event-card button {
+  margin-top: 10px;
+}
+
+/* VIP Button */
+.event-card button.vip-btn {
+  background-color: gold;
+  color: #333;
+  font-weight: bold;
+}
+.event-card button.vip-btn:hover {
+  background-color: #e6c200;
+}
+
+/* Standard Button */
+.event-card button.standard-btn {
+  background-color: #4f46e5;
+  color: white;
+  font-weight: bold;
+}
+.event-card button.standard-btn:hover {
+  background-color: #3730a3;
+}
+
+/* Tickets Display */
+.ticket-card {
+  background: #fff;
+  padding: 20px;
+  margin: 15px auto;
+  max-width: 500px;
+  border-radius: 12px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.ticket-card p {
+  margin: 6px 0;
+}
+
+.ticket-card button {
+  margin-top: 10px;
+  background-color: #dc3545;
+}
+
+.ticket-card button:hover {
+  background-color: #c82333;
+}
+
+/* Admin Events Layout */
+#eventList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  padding: 10px;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .form-container, .event-card, .ticket-card {
+    margin: 20px 10px;
+    width: auto;
+  }
+
+
+
+  #eventList {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* Background image for events page only */
+.events-page {
+  background-image: url('https://wallpaperaccess.com/full/2489663.jpg'); 
+  background-position: center center;
+  background-size: cover;
+  min-height: 100vh;
+  color: #333; 
+}
+
+.admin-page {
+  background-image: url('https://images.pexels.com/photos/919734/pexels-photo-919734.jpeg?cs=srgb&dl=pexels-alxs-919734.jpg&fm=jpg'); 
+  background-position: center center;
+  background-size: cover;
+  min-height: 100vh;
+  color: #ffffff; 
+}
+
+.approve-page {
+  background-image: url('https://www.austadiums.com/news/images/optus-aleague-gf-crowd.jpg'); 
+  background-position: center center;
+  background-size: cover;
+  min-height: 100vh;
+  color: #333; 
+}
